@@ -2,8 +2,9 @@ version: "3"
 services:
   leopbrito-strapi:
     container_name: leopbrito-strapi
-    build: .
-    image: leopbrito-strapi:0.1.1
+    build:
+      dockerfile: Dockerfile.dev
+    image: leopbrito-strapi
     restart: unless-stopped
     env_file: .env
     environment:

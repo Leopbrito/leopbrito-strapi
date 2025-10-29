@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "core_apps",
+  "info": {
+    "singularName": "core-app",
+    "pluralName": "core-apps",
+    "displayName": "core_app"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "menu": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "core.menu-item",
+      "repeatable": true
+    }
+  }
+}
